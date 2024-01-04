@@ -55,10 +55,24 @@ body {
   max-width: 400px;
 }
 
+.slider {
+  width: 380px;
+  max-width: fit-content;
+  overflow: hidden;
+
+
+}
+
+.slider-line {
+  display: flex;
+  transition: 0.8s;
+}
+
 .cv-left a {
   color: aliceblue;
   text-decoration: dashed;
 }
+
 .cv-left a:hover {
   text-decoration: dotted;
 }
@@ -111,6 +125,7 @@ h3 {
   padding-right: 15px;
   text-align: left;
 }
+
 /* БИОГРАФИЮ РЕДАКТИРОВАТЬ СЮДА */
 .cv-right {
   background-color: white;
@@ -125,6 +140,7 @@ h3 {
 .span1 {
   padding-left: 5px;
 }
+
 .span2 {
   padding-left: 46px;
 }
@@ -169,6 +185,7 @@ h3 {
 }
 
 @media (max-width: 500px) {
+
   .body-bg,
   .row-cv,
   .cv-left,
