@@ -1,22 +1,35 @@
 body {
   background-color: rgb(226, 231, 231);
   background-size: cover;
+  /* min-width: fit-content; */
+  /* max-width: min-content; */
 
-  margin: 80px;
+  /* margin: 80px; */
+  margin: 40px auto;
+  /* margin: 40px 300px 40px 300px; */
+  width: 1122px;
+  /* width: 80%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: fit-content;
 }
 
 .body-bg {
+  /* margin: 40px auto; */
   display: flex;
   border-color: black;
   outline: 20px solid black;
   border-radius: 30px;
-  width: fit-content;
+  /* min-width: fit-content; */
+  width: 1122px;
+  /* max-width: min-content; */
+  /* width: 80%; */
 }
+
 
 .row-cv {
   display: flex;
   flex-direction: row;
+
 }
 
 .cv-photo {
@@ -56,9 +69,10 @@ body {
 }
 
 .slider {
-  width: 380px;
+  width: 400px;
   max-width: fit-content;
   overflow: hidden;
+  max-width: 100%;
 
 
 }
@@ -134,6 +148,8 @@ h3 {
   padding-top: 60px;
   padding-left: 30px;
   padding-right: 30px;
+
+
   /* padding-bottom: 60px; */
 }
 
@@ -145,45 +161,77 @@ h3 {
   padding-left: 46px;
 }
 
-.lowbar {
-  margin-top: 95px;
-  margin-left: 150px;
-  margin-right: 510px;
-  padding-bottom: 3px;
-  margin-bottom: 12px;
+/* .lowbar {
+  background-color: aquamarine;
+} */
 
-  height: 3px;
-  background-color: rgb(0, 0, 0);
+.lowbar>hr {
+  margin-right: 68%;
+  background-color: rgba(5, 5, 5, 0.89);
+  width: 130px;
+  /* margin: 0 auto; */
+  height: 7px;
+
+
+  /* margin-bottom: 50px; */
+
+
 }
 
+
+
 /* адаптация под мобильные устройства */
-@media (max-width: 800px) {
+
+@media (min-width: 1223px) {
+  /* .lowbar>hr {
+    width: 40px;
+    color: blue;
+  } */
+}
+
+
+@media (max-width: 1222px) {
+
+
+  body {
+    width: fit-content;
+  }
+
+  .body-bg {
+    width: fit-content;
+  }
+
   .cv-left {
-    max-width: 30%;
+    max-width: 300px;
   }
 
-  .cv-photo {
-    max-width: 100%;
+  .cv-right {
+    max-width: 500px;
   }
+}
 
-  .hardskills,
-  .ul-hardskills,
-  .ul-softskills,
-  .li,
-  .softskills,
-  .achievments {
-    padding-left: 18px;
-  }
 
+.hardskills,
+.ul-hardskills,
+.ul-softskills,
+.li,
+.softskills,
+.achievments {
+  padding-left: 18px;
+}
+
+/* 
   h2 {
     padding-left: 15px;
   }
 
   .cv-right {
     max-width: 70%;
-  }
-}
+  
+} */
 
+
+/* 
 @media (max-width: 500px) {
 
   .body-bg,
@@ -210,4 +258,3 @@ h3 {
     text-align: left;
     padding-left: 95px;
   }
-}
