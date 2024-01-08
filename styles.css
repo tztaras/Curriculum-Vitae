@@ -7,7 +7,7 @@ body {
   /* margin: 80px; */
   margin: 40px auto;
   /* margin: 40px 300px 40px 300px; */
-  width: 1122px;
+  /* width: 1122px; */
   /* width: 80%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: fit-content;
@@ -21,7 +21,7 @@ body {
   border-radius: 30px;
   /* min-width: fit-content; */
   width: 1122px;
-  /* max-width: min-content; */
+
   /* width: 80%; */
 }
 
@@ -108,21 +108,24 @@ body {
   margin-top: 20px;
 }
 
-.bg-white {
+/* .bg-white {
   font-size: larger;
+} */
+
+.lefthr {
+  max-width: 84%;
+  /* padding-left: 40px; */
 }
 
 .hardskills,
 .softskills,
 .achievements {
   max-width: 400px;
-  padding-left: 15px;
-  padding-right: 15px;
+
 }
 
 h2 {
-  /* text-align: center; */
-  padding-left: 50px;
+  text-align: center;
   font-size: large;
 }
 
@@ -135,10 +138,12 @@ h3 {
 .ul-achievements {
   list-style-type: square;
   line-height: 175%;
-  padding-left: 55px;
-  padding-right: 15px;
-  text-align: left;
+  padding-left: 20%;
+
+
 }
+
+
 
 /* БИОГРАФИЮ РЕДАКТИРОВАТЬ СЮДА */
 .cv-right {
@@ -179,12 +184,16 @@ h3 {
 
 } */
 
+.Hobby {
+  margin-bottom: 15px;
+}
+
 #lb {
   position: relative;
   width: 130px;
   bottom: 25px;
   height: 7px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: rgba(5, 5, 5, 0.89);
 }
 
@@ -218,51 +227,45 @@ h3 {
   }
 }
 
+@media (max-width: 940px) {
 
-.hardskills,
-.ul-hardskills,
-.ul-softskills,
-.li,
-.softskills,
-.achievments {
-  padding-left: 18px;
-}
 
-/* 
-  h2 {
-    padding-left: 15px;
+  body {
+    width: fit-content;
+
+  }
+
+  .body-bg {
+    width: fit-content;
+  }
+
+  .cv-left {
+    max-width: 250px;
   }
 
   .cv-right {
-    max-width: 70%;
-  
-} */
-
-
-/* 
-@media (max-width: 500px) {
-
-  .body-bg,
-  .row-cv,
-  .cv-left,
-  .cv-right {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .achievements {
-    display: none;
-  }
-
-  .hardskills,
-  .softskills {
-    text-align: center;
+    max-width: 430px;
   }
 
   .ul-hardskills,
   .ul-softskills,
   .ul-achievements {
-    text-align: left;
-    padding-left: 95px;
+    padding-left: 18%;
   }
+}
+
+
+/* @media print {
+  body {
+    size: A4;
+    border: none;
+    outline: none;
+    background-color: none;
+  }
+
+  .body-bg {
+    border: none;
+    outline: none;
+    background-color: none;
+  }
+} */
