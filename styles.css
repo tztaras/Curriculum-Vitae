@@ -161,6 +161,7 @@ h3 {
 .span5k {
   padding-left: 121px
 }
+
 .span1 {
   padding-left: 5px;
 }
@@ -257,6 +258,17 @@ h3 {
   }
 }
 
+
+
+
+
+td {
+  padding-right: 7px;
+}
+
+.tdright {
+  text-align: end;
+}
 
 /* @media print {
   body {
