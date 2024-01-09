@@ -82,6 +82,42 @@ body {
   transition: 0.8s;
 }
 
+.buttons {
+  height: 0.1px;
+}
+
+.slider-back {
+  position: relative;
+  bottom: 50px;
+  right: 38%;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 30px;
+
+
+}
+
+.slider-next {
+  position: relative;
+  bottom: 50px;
+  left: 38%;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.slider-back:hover,
+.slider-next:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
 .cv-left a {
   color: aliceblue;
   text-decoration: dashed;
@@ -229,6 +265,19 @@ h3 {
   .cv-right {
     max-width: 500px;
   }
+
+  .slider-back {
+    position: relative;
+    bottom: 40px;
+    right: 35%;
+
+  }
+
+  .slider-next {
+    position: relative;
+    bottom: 40px;
+    left: 35%;
+  }
 }
 
 @media (max-width: 940px) {
@@ -256,7 +305,24 @@ h3 {
   .ul-achievements {
     padding-left: 18%;
   }
+
+  .slider-back {
+    font-size: 25px;
+    position: relative;
+    bottom: 35px;
+    right: 35%;
+
+  }
+
+  .slider-next {
+    font-size: 25px;
+    position: relative;
+    bottom: 35px;
+    left: 35%;
+  }
 }
+
+
 
 
 
